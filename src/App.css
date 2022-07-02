@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:300,400,500,700');
+
+body {
+  background-color: #191919;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +43,106 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh;
+}
+
+.content {
+  text-align: center;
+}
+
+.content img {
+  border-radius: 0.5rem;
+  width: 50vw;
+  height: 25vw;
+}
+
+
+.guess {
+  display: flex;
+  align-items: center;
+  padding: 1vh;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.guess .button {
+  margin-left: auto;
+  background-image:linear-gradient(330deg, hsl(272,53%,50%) 0%, hsl(226, 68%, 56%) 100%);
+  color: white;
+  font-size: 14px;
+  border-radius: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  padding: 1vh;
+  font-weight: bold;
+}
+
+.examples {
+  font-style: italic;
+  font-size: 11px;
+  color: grey;
+  margin-top: 10px;
+}
+
+.next {
+  margin-left: auto;
+  background-image:linear-gradient(330deg, hsl(272,53%,50%) 0%, hsl(226,68%,56%) 100%);
+  color: white;
+  font-size: 14px;
+  border-radius: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  padding: 1vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  font-weight: bold;
+  border: none;
+  margin-top: 10vh;
+  
+}
+
+.guess .input {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  padding: 1vh;
+  width: 100%;
+}
+
+.guess input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.number {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.resultGood {
+  color: green;
+}
+
+.resultMedium {
+  color: orange;
+}
+
+.resultBad {
+  color: red;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #535461;
+  color: white;
+  text-align: center;
 }
